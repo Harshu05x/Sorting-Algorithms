@@ -16,14 +16,14 @@ void print(vector<int>& arr){
 vector<int> bubble_sort(vector<int>& arr){
     int n = arr.size();
     for(int i = 1; i < n; i++){
-        bool swapped = false; 
+        bool isSwapped = false; 
         for(int j = 0; j < n-i; j++){
             if(arr[j] > arr[j+1]){
                 swap(arr[j],arr[j+1]);
-                swapped = true;
+                isSwapped = true;
             }
         }
-        if(!swapped) break;
+        if(!isSwapped) break;
     }
     return arr;
 }
